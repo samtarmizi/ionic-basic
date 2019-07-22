@@ -28,6 +28,8 @@ Ionic Training
     -Typescript
     -Modal
 
+        ionic g page modal
+
 
 
 Notes

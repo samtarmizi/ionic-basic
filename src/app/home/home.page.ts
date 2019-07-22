@@ -18,6 +18,7 @@ export class HomePage {
 
   next_page(){
     this.nav.navigateForward('second');
+    //if dont want animation this.nav.navigateRoute('second);
   }
 
 }
