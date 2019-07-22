@@ -17,11 +17,21 @@ Ionic Training
 2. Run virtually on phone
 
     2.1 Run
+    
         ionic cordova prepare
 
         ionic serve --devapp
+
+3. Create Page Navigation & Parameters
+
+    -HTML
+    -Typescript
+    -Modal
 
 
 
 Notes
 - anything function .page.ts
+- creating page
+    - dont put space
+    - dont put Page at the back
