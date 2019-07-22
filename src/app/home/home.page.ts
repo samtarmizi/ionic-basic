@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    public nav:NavController
+  ) {}
 
   tiger_alert(){
     alert("This is a tiger!")
+  }
+
+  next_page(){
+    this.nav.navigateForward('second');
   }
 
 }
