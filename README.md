@@ -37,3 +37,6 @@ Notes
 - creating page
     - dont put space
     - dont put Page at the back
+
+- icons
+    - go to ionicons.com
