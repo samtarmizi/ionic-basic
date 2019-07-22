@@ -13,3 +13,8 @@ Ionic Training
     1.3 Run without opening browser
 
         ionic serve -b
+
+
+
+Notes
+- anything function .page.ts

@@ -9,4 +9,8 @@ export class HomePage {
 
   constructor() {}
 
+  tiger_alert(){
+    alert("This is a tiger!")
+  }
+
 }
