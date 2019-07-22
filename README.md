@@ -14,6 +14,13 @@ Ionic Training
 
         ionic serve -b
 
+2. Run virtually on phone
+
+    2.1 Run
+        ionic cordova prepare
+
+        ionic serve --devapp
+
 
 
 Notes
