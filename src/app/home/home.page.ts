@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, ModalController } from '@ionic/angular';
+
+import { ModalPage } from '../modal/modal.page';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,8 @@ import { NavController } from '@ionic/angular';
 export class HomePage {
 
   constructor(
-    public nav:NavController
+    public nav:NavController,
+    public mc:ModalController
   ) {}
 
   tiger_alert(){
@@ -19,6 +22,15 @@ export class HomePage {
   next_page(){
     this.nav.navigateForward('second');
     //if dont want animation this.nav.navigateRoute('second);
+  }
+
+  //use sync to ensure component done then execute return
+  async open_modal(){
+    const modal = await this.mc.create({
+      component:ModalPage
+    });
+
+    return await modal.present();
   }
 
 }
